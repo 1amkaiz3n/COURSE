@@ -24,7 +24,7 @@
 
 ---
 
-# 📌 SINKS (TEMPAT RAW INPUT DIEKSEKUSI)
+## 📌 SINKS (TEMPAT RAW INPUT DIEKSEKUSI)
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -32,7 +32,7 @@
 └─────────────────────────────────────────────┘
 ```
 
-## ⚠️ HTML EXECUTION SINK
+### ⚠️ HTML EXECUTION SINK
 
 ```
 innerHTML
@@ -45,7 +45,7 @@ document.write()
 
 ---
 
-## ⚠️ JS EXECUTION SINK
+### ⚠️ JS EXECUTION SINK
 
 ```
 eval()
@@ -58,7 +58,7 @@ Function("string")
 
 ---
 
-## ⚠️ URL / NAVIGATION SINK
+### ⚠️ URL / NAVIGATION SINK
 
 ```
 location = user_input
@@ -69,7 +69,7 @@ window.open(user_input)
 
 ---
 
-## ⚠️ ATTRIBUTE CONTEXT SINK
+### ⚠️ ATTRIBUTE CONTEXT SINK
 
 ```
 element.setAttribute("href", user_input)
@@ -81,7 +81,7 @@ element.innerHTML inside attribute
 
 ---
 
-## ⚠️ DOM INSERTION SINK
+### ⚠️ DOM INSERTION SINK
 
 ```
 appendChild()
@@ -93,7 +93,7 @@ replaceChild()
 
 ---
 
-# 📌 SINK TYPE CLASSIFICATION
+## 📌 SINK TYPE CLASSIFICATION
 
 ```
 ┌──────────────────────────────────────┐
@@ -101,7 +101,7 @@ replaceChild()
 └──────────────────────────────────────┘
 ```
 
-## 🔥 CRITICAL (langsung XSS)
+### 🔥 CRITICAL (langsung XSS)
 
 * innerHTML
 * document.write
@@ -110,7 +110,7 @@ replaceChild()
 
 ---
 
-## ⚠️ HIGH (context dependent)
+### ⚠️ HIGH (context dependent)
 
 * outerHTML
 * insertAdjacentHTML
@@ -119,7 +119,7 @@ replaceChild()
 
 ---
 
-## 🟡 MEDIUM (butuh kondisi)
+### 🟡 MEDIUM (butuh kondisi)
 
 * setAttribute()
 * DOM node insertion
@@ -127,7 +127,7 @@ replaceChild()
 
 ---
 
-## 🟢 LOW (safe by default)
+### 🟢 LOW (safe by default)
 
 * textContent
 * innerText
@@ -135,7 +135,7 @@ replaceChild()
 
 ---
 
-# 📌 FULL FLOW MAP (SOURCE → SINK)
+## 📌 FULL FLOW MAP (SOURCE → SINK)
 
 ```
 SOURCE
@@ -159,7 +159,7 @@ SANITATION?
 
 ---
 
-# 📌 QUICK DETECTION RULE (BUG BOUNTY SPEED)
+## 📌 QUICK DETECTION RULE (BUG BOUNTY SPEED)
 
 ```
 IF source = URL / hash / message
@@ -169,7 +169,7 @@ AND sink = innerHTML / eval / write
 
 ---
 
-# 📌 KEY INSIGHT (biar kamu nggak ketukar lagi)
+## 📌 KEY INSIGHT (biar kamu nggak ketukar lagi)
 
 * SOURCE = DARAH MASUK
 * SINK = TEMPAT EKSEKUSI
