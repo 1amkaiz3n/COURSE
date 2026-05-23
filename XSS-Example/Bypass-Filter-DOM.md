@@ -1,9 +1,3 @@
-Ini cheat sheet **bypass filter DOM XSS level PortSwigger advanced** yang biasanya dipakai saat ada WAF ringan, blacklist, atau sanitization sebagian.
-
-Fokusnya: **kenapa payload gagal → bagaimana biasanya di-bypass**.
-
----
-
 # 📌 DOM XSS Bypass Filter Cheat Sheet (Advanced)
 
 ---

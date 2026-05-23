@@ -1,3 +1,5 @@
+# Proof of Concept: Automated Account Token Extraction via CSRF Flow
+
 ## Problem dengan Fetch Code  Saat Ini
 
 Kode cuma jalan di **console browser korban** kalau korban buka console manual. Itu **tidak realistis** untuk serangan.

@@ -1,4 +1,4 @@
-# Evading Filter XSS / menghindari filter
+# XSS Filter Evasion Techniques (Attribute, Event Handler & URL Based Bypass)
 
 Filter XSS ini melihat nilai, menggantinya, menghapusnya, atau memblokirnya jika sesuatu tampak berbahaya.
 

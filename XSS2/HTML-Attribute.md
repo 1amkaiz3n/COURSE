@@ -1,4 +1,6 @@
-# Attacking Atributes
+# HTML Attribute Injection & Context Breaking Basics
+
+## Attacking Atributes
 
 RESEP :
   - HTML Attributes 
@@ -6,7 +8,7 @@ RESEP :
   - Javascript Function
 
 
-## CONTOH UTAMA — Title Attribute (basic reflection)
+### CONTOH UTAMA — Title Attribute (basic reflection)
 
 **UI:**
 Input = `1amkaiz3n`
@@ -22,7 +24,7 @@ Output = `found 1 1amkaiz3n`
 
 Sebagai attacker, kita dapat memecah atribut menggunakan **single quote (')**, **double quote (")**, dan juga **karakter space ( )**.Tergantung pada atribut tersebut di atur.Jadi di kasus ini,basic payload tidak akan bekerja atau tidak akan di eksekusi.
 
-## Contoh Attack
+### Contoh Attack
 
 Kita akan menggunakan **tanda kutip (")** untuk keluar dari konteks atribut.
 

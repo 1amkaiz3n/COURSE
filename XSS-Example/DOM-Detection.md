@@ -1,7 +1,3 @@
-Ini checklist cepat yang biasa dipakai buat “30 detik scan” apakah sebuah halaman kemungkinan punya DOM XSS. Fokusnya bukan eksploit dulu, tapi **identifikasi titik lemah secepat mungkin**.
-
----
-
 # 📌 DOM XSS Real Lab Detection Checklist (30 Detik Scan)
 
 ```id="kq1p7z"

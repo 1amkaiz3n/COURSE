@@ -1,4 +1,6 @@
-# Attacking URLs
+# URL Injection & JavaScript Scheme Exploitation Basics
+
+## Attacking URLs
 
 RESEP :
   - HTML Attributes 
@@ -10,7 +12,7 @@ RESEP :
 
 Beberapa atribut di rancang khusus untuk url,seperti tag `<a>` dan `<iframe>`.
 
-## Contoh 
+### Contoh 
 
 **UI:**
 Input = `1amkaiz3n`
@@ -28,7 +30,7 @@ Output = Klik [1amkaiz3n](https://tes.com)
 
 Disni kita bisa melihat bahwa input kita di gunakan baik dalam atribut `href`,maupun dalam `<h1>` konten untuk tautan itu.
 
-## Contoh Attack
+### Contoh Attack
 
 Disini,jika kita inject dengan payload sebelumnya seprti ini :
 

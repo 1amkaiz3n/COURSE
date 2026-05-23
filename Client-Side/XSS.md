@@ -1,4 +1,4 @@
-# Client-Side Injections - Reflecte and Stored Cross-Site Scripting XSS
+# Client-Side Injections - Reflected and Stored Cross-Site Scripting XSS
 
 ## Client-Side Injections
 

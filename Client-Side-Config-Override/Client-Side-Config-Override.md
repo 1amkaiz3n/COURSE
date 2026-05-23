@@ -1,4 +1,4 @@
-# 🚀 Yang lo harus buat sekarang
+# Static Payload Server Setup for Config Injection Testing
 
 Lo butuh server yang bisa serve:
 
