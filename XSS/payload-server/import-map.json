@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "@contentsquare/shell": "https://testing.aigoretech.cloud/payload.js",
+    "@contentsquare/dashboard": "https://testing.aigoretech.cloud/payload.js",
+    "react": "https://testing.aigoretech.cloud/payload.js",
+    "react-dom": "https://testing.aigoretech.cloud/payload.js",
+    "vue": "https://testing.aigoretech.cloud/payload.js",
+    "angular": "https://testing.aigoretech.cloud/payload.js",
+    "lodash": "https://testing.aigoretech.cloud/payload.js",
+    "moment": "https://testing.aigoretech.cloud/payload.js"
+  },
+  "scopes": {
+    "https://app.contentsquare.com/": {
+      "shell": "https://testing.aigoretech.cloud/payload.js"
+    }
+  }
+}
