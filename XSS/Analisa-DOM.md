@@ -1,6 +1,6 @@
 # Analisis DOM Sink pada Predictive Search (Potential XSS Flow)
 
----
+
 
 ## 1. Sumber Input yang Perlu Dicek
 
@@ -11,7 +11,6 @@ Untuk melakukan tracing alur data, dua titik utama yang harus diperhatikan:
 
 Parameter URL ini sering menjadi **entry point awal** yang dapat mempengaruhi alur data aplikasi.
 
----
 
 ## 2. Bagian Sink yang Paling Kritis
 
@@ -29,7 +28,7 @@ Ini merupakan **DOM sink berisiko tinggi**.
 * Jika `resultsMarkup` tidak disanitasi → dapat menjadi jalur injeksi HTML/JS
 * Kontrol penuh terhadap struktur HTML bisa terjadi jika input tidak divalidasi
 
----
+
 
 ## 3. Alur Data (Execution Chain)
 
@@ -49,7 +48,7 @@ DOMParser / processing layer
 this.predictiveSearchResults.innerHTML = resultsMarkup
 ```
 
----
+
 
 ## 4. Apakah Ini XSS?
 
@@ -58,7 +57,7 @@ this.predictiveSearchResults.innerHTML = resultsMarkup
 * ❌ Belum bisa dipastikan XSS aktif
 * ✔ Tetapi terdapat **indikasi kuat DOM XSS / HTML Injection potential**
 
----
+
 
 ## 5. Red Flag Utama
 
@@ -73,7 +72,7 @@ Ini adalah:
 * ⚠️ DOM sink klasik
 * ⚠️ Titik raw rendering tanpa escaping
 
----
+
 
 ## 6. Risiko yang Mungkin Terjadi
 
@@ -84,7 +83,7 @@ Jika `resultsMarkup` berasal dari user-controlled input:
 * UI manipulation
 * Script execution (dalam kondisi tertentu)
 
----
+
 
 ## 7. Kesimpulan
 

@@ -16,7 +16,7 @@
 
 👉 Jika ada user-controlled input → lanjut
 
----
+
 
 ```id="8xg3qb"
 ┌────────────────────────────────────────────┐
@@ -38,7 +38,7 @@ Cari pattern ini:
 
 👉 Kalau ketemu → cek sink
 
----
+
 
 ```id="t9m2kz"
 ┌────────────────────────────────────────────┐
@@ -58,7 +58,7 @@ Cari ini di JS:
 
 👉 Kalau SOURCE → SINK langsung = 🚨 RED FLAG
 
----
+
 
 ```id="x0v8lm"
 ┌────────────────────────────────────────────┐
@@ -81,7 +81,7 @@ Cek:
 
 👉 Jika jadi HTML → potensi XSS
 
----
+
 
 # 📌 QUICK DECISION TREE
 
@@ -91,7 +91,7 @@ SOURCE + SINK + NO SANITIZATION
      💥 DOM XSS LIKELY
 ```
 
----
+
 
 # 📌 RED FLAGS (langsung curiga vuln)
 
@@ -101,7 +101,7 @@ SOURCE + SINK + NO SANITIZATION
 * Tidak ada encodeURIComponent / DOMPurify
 * HTML berubah setelah input
 
----
+
 
 # 📌 30-SECOND MENTAL SHORTCUT
 
@@ -112,7 +112,7 @@ THEN:
 👉 STOP SEARCHING, TEST PAYLOAD
 ```
 
----
+
 
 # 📌 PRO TIP (biar lebih cepat lagi)
 

@@ -102,7 +102,7 @@ Dan sejauh ini ksaya belum melihat bukti adanya validasi di sisi server,tetapi i
 
 Pada target kita disini,jika kita mampu mendapatkan injeksi client-side untuk mengeksekusi Reflacted XSS,saya yakin kita akan dapat menunjukan bahwa kita akan memiliki banyak peluang  untuk menunjukan dampak.
 
-Sekarang kita akan melihat,siapa saja korban yagn tersedia,apa saja jeni serang yan dapat kita lakukan dan itulah yagn akn kita lakukna disni.
+Sekarang kita akan melihat,siapa saja korban yagn tersedia,apa saja jenia serangan yang dapat kita lakukan dan itulah yagn akn kita lakukna disni.
 
 Namu jika kita lihat dari cara kita mengevaluasi kontrol kopensasi ini,saya rasa mereka telah berfokus pada upaya untuk menghentikan XSS client-side ini sejak awal.Mereka belum menunjukkan banyak minat untuk mencoba mencegahnya di jadikan senjata di kemudian hari.Jadi ,itu menunjukkan kepada saya bahwa jika kita mampu untuk mengakali kontrol ini,
 

@@ -62,7 +62,7 @@
    (JavaScript runs in browser)
 ```
 
----
+
 
 ## 📌 Shortcut cara mikir cepat
 
@@ -71,7 +71,7 @@
 * `attribute` → setengah hidup (bisa escape context)
 * `URL params → innerHTML` → paling sering DOM XSS
 
----
+
 
 ## 📌 Cara pakai 
 

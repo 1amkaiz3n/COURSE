@@ -22,7 +22,7 @@
 └─────────────────────────────────────────────┘
 ```
 
----
+
 
 ## 📌 SINKS (TEMPAT RAW INPUT DIEKSEKUSI)
 
@@ -43,7 +43,7 @@ document.write()
 
 👉 Risk: 💥 FULL HTML PARSING → XSS
 
----
+
 
 ### ⚠️ JS EXECUTION SINK
 
@@ -56,7 +56,7 @@ Function("string")
 
 👉 Risk: 💥 DIRECT JS EXECUTION
 
----
+
 
 ### ⚠️ URL / NAVIGATION SINK
 
@@ -67,7 +67,7 @@ window.open(user_input)
 
 👉 Risk: 🔁 REDIRECT / JS SCHEME injection
 
----
+
 
 ### ⚠️ ATTRIBUTE CONTEXT SINK
 
@@ -79,7 +79,7 @@ element.innerHTML inside attribute
 
 👉 Risk: ⚠️ BREAKOUT POSSIBLE
 
----
+
 
 ### ⚠️ DOM INSERTION SINK
 
@@ -91,7 +91,7 @@ replaceChild()
 
 👉 Risk: depends on node type (safe vs HTML injection)
 
----
+
 
 ## 📌 SINK TYPE CLASSIFICATION
 
@@ -108,7 +108,7 @@ replaceChild()
 * eval / Function
 * setTimeout("string")
 
----
+
 
 ### ⚠️ HIGH (context dependent)
 
@@ -117,7 +117,7 @@ replaceChild()
 * element.src / href
 * location = input
 
----
+
 
 ### 🟡 MEDIUM (butuh kondisi)
 
@@ -125,7 +125,7 @@ replaceChild()
 * DOM node insertion
 * template rendering engines
 
----
+
 
 ### 🟢 LOW (safe by default)
 
@@ -133,7 +133,7 @@ replaceChild()
 * innerText
 * value (input field only)
 
----
+
 
 ## 📌 FULL FLOW MAP (SOURCE → SINK)
 
@@ -157,7 +157,7 @@ SANITATION?
       SAFE OUTPUT (escaped text)
 ```
 
----
+
 
 ## 📌 QUICK DETECTION RULE (BUG BOUNTY SPEED)
 
@@ -167,7 +167,7 @@ AND sink = innerHTML / eval / write
 → HIGH PROBABILITY DOM XSS
 ```
 
----
+
 
 ## 📌 KEY INSIGHT (biar kamu nggak ketukar lagi)
 

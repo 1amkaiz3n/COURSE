@@ -6,7 +6,6 @@ Data URI scheme adalah mekanisme yang memungkinkan data disematkan langsung di d
 data:[<mediatype>][;base64],<data>
 ```
 
----
 
 ## Contoh Penggunaan Data Scheme
 
@@ -30,7 +29,6 @@ Jika di-decode, isi Base64 tersebut adalah:
 <script>alert(1)</script>
 ```
 
----
 
 ## Cara Kerja Data Scheme
 
@@ -41,7 +39,7 @@ Data scheme memungkinkan browser untuk membaca konten langsung dari URL tanpa me
 * Teks biasa (`text/plain`)
 * SVG (`image/svg+xml`)
 
----
+
 
 ## Relevansi terhadap XSS
 
@@ -49,7 +47,7 @@ Pada masa awal perkembangan browser, `data:` scheme sering digunakan sebagai sal
 
 Namun pada browser modern, mekanisme ini sudah diperketat.
 
----
+
 
 ## Perilaku Browser Modern
 
@@ -62,7 +60,7 @@ Beberapa perubahan penting:
 * Kebijakan keamanan seperti CSP (Content Security Policy) dapat memblokir eksekusi
 * Beberapa browser membatasi eksekusi JavaScript dari data URI pada konteks tertentu
 
----
+
 
 ## Kesimpulan
 
