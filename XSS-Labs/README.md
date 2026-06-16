@@ -1,4 +1,4 @@
-# LAB XSS PortSwigger
+# LAB XSS
 
 Panduan penyelesaian lab **Cross-Site Scripting (XSS)** di PortSwigger Academy, mencakup berbagai skenario seperti reflected, stored, dan DOM-based XSS untuk memahami bagaimana input pengguna dapat dieksekusi sebagai JavaScript di browser.
 
