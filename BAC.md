@@ -1,6 +1,7 @@
 # **Pembahasan BAC dan IDOR**
 
 **BAC** → *Broken Access Control*
+
 **IDOR** → *Insecure Direct Object Reference*
 
 ---
