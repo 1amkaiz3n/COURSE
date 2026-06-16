@@ -30,7 +30,7 @@ attacker -> member -> gak boleh hapus chat di grup
 victim -> admin
 ```
 
-karean kuranganya implementasi **access control**, jadinay member atau si attacker ini bisa hapus chat di grup, padahal secara UI itu tidak boleh
+karena kuranganya implementasi **access control**, jadinay member atau si attacker ini bisa hapus chat di grup, padahal secara UI itu tidak boleh
 
 ---
 
@@ -38,12 +38,12 @@ karean kuranganya implementasi **access control**, jadinay member atau si attack
 
 ```mermaid
 graph TD
-    style Admin fill:#fbb,stroke:#333,stroke-width:2px
-    style AttackerA fill:#bbf,stroke:#333,stroke-width:2px
-    style AttackerB fill:#bbf,stroke:#333,stroke-width:2px
-    style AttackerC fill:#bbf,stroke:#333,stroke-width:2px
-    style CanDelete fill:#bfb,stroke:#333,stroke-width:2px
-    style CannotDelete fill:#ffb,stroke:#333,stroke-width:2px
+    style Admin fill:#ff6b6b,stroke:#222,stroke-width:2px,color:#ffffff
+    style AttackerA fill:#4dabf7,stroke:#222,stroke-width:2px,color:#ffffff
+    style AttackerB fill:#4dabf7,stroke:#222,stroke-width:2px,color:#ffffff
+    style AttackerC fill:#4dabf7,stroke:#222,stroke-width:2px,color:#ffffff
+    style CanDelete fill:#51cf66,stroke:#222,stroke-width:2px,color:#ffffff
+    style CannotDelete fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
 
     Admin["Admin (Victim)"]
 
@@ -58,29 +58,32 @@ graph TD
     Admin --> AttackerB
     Admin --> AttackerC
 
-    %% Actions percobaan attacker
     AttackerA -->|Try Delete Admin Chat| CannotDelete["Access Denied"]
     AttackerB -->|Try Delete Admin Chat| CannotDelete
     AttackerC -->|Try Delete Admin Chat| CannotDelete
 
-    %% Admin actions
     Admin -->|Delete Any Chat| CanDelete["Access Allowed"]
 ```
 
 ## Horizontal / IDOR
 ```mermaid
 graph LR
-    style Attacker fill:#fbb,stroke:#333,stroke-width:2px
-    style Victim1 fill:#bfb,stroke:#333,stroke-width:2px
-    style Victim2 fill:#bfb,stroke:#333,stroke-width:2px
-    style Denied fill:#ffb,stroke:#333,stroke-width:2px
-    style Success fill:#bfb,stroke:#333,stroke-width:2px
+    style Attacker fill:#ff6b6b,stroke:#222,stroke-width:2px,color:#ffffff
+    style Victim1 fill:#4dabf7,stroke:#222,stroke-width:2px,color:#ffffff
+    style Victim2 fill:#4dabf7,stroke:#222,stroke-width:2px,color:#ffffff
+    style Denied fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied1 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied2 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied3 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied4 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied5 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Denied6 fill:#ffd43b,stroke:#222,stroke-width:2px,color:#000000
+    style Success fill:#51cf66,stroke:#222,stroke-width:2px,color:#ffffff
 
     Attacker["Attacker (User 1)"]
     Victim1["Victim (User 2)"]
     Victim2["Victim (User 3)"]
 
-    %% Percobaan edit
     Attacker -->|Try Edit Victim1 Data| Denied1["Access Denied"]
     Attacker -->|Try Edit Victim2 Data| Denied2["Access Denied"]
 
@@ -90,7 +93,6 @@ graph LR
     Victim2 -->|Try Edit Attacker Data| Denied5["Access Denied"]
     Victim2 -->|Try Edit Victim1 Data| Denied6["Access Denied"]
 
-    %% Contoh bug IDOR
     Attacker -->|IDOR Exploit| Success["Can Edit Victim1 Data"]
 ```
 
